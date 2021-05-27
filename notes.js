@@ -14,4 +14,14 @@ const notes = [{
     }
 ]
 
+const moreNotesAboutToday = {
+    id: 3,
+    subject: "Javascript (again)",
+    date: "May 27th, 2021",
+    feeling: "Just in the bit of extra time that I've worked, my knowledge has strengthened. I've been taking quite a few notes and pushing through at a decent pace.",
+    timeSpent: 120
+}
+
+notes.push(moreNotesAboutToday);
+
 console.log(notes);
