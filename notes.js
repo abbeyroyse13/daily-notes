@@ -24,4 +24,14 @@ const moreNotesAboutToday = {
 
 notes.push(moreNotesAboutToday);
 
+for (const note of notes) {
+    console.log(`Note ${note.id} 
+    ${note.date}
+    I learned about ${note.subject}
+    I worked on it for ${note.timeSpent} minutes
+    How I feel: ${note.feeling}
+    -------------
+    `)
+}
+
 console.log(notes);
