@@ -42,5 +42,26 @@ for (const note of notes) {
     }
 }
 
+const addNewNote = (newNote) => {
+    const lastIndex = notes.length - 1
+    const currentFinalNote = notes[lastIndex]
+    const newId = currentFinalNote.id
+    const idForNewestNote = newId + 1
+
+    newNote.id = idForNewestNote
+    notes.push(newNote)
+}
+
+const todaysNote = {
+    subject: "Javascript Functions",
+    date: "June 1st, 2021",
+    feeling: "I'm feeling pretty good. Slightly shaky, but better than last week.",
+    timeSpent: 120
+}
+
+// dateCreated: date.now()
+// still looking @ this ^
+
+addNewNote(todaysNote);
 
 console.log(notes);
