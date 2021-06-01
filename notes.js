@@ -1,3 +1,5 @@
+const searchTerm = "HTML/CSS"
+
 const notes = [{
         id: 1,
         subject: "HTML/CSS",
@@ -33,5 +35,12 @@ for (const note of notes) {
     -------------
     `)
 }
+
+for (const note of notes) {
+    if (note.subject === searchTerm) {
+        console.log(`The subject we learned about was ${note.subject}`)
+    }
+}
+
 
 console.log(notes);
